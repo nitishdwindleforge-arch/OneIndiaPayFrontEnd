@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { mockLogin, mockUsers } from '../utils/mockData';
 
-const USER_SERVICE_URL = 'http://localhost:8081'; // UserService port
-const AUTH_SERVICE_URL = 'http://localhost:8081'; // AuthService port (same as UserService)
+const USER_SERVICE_URL = 'https://vishnu-userservice-76c2708d61ea.herokuapp.com'; // UserService
+const AUTH_SERVICE_URL = 'https://vishnu-authservice-35c9cb816a6a.herokuapp.com'; // AuthService
 
 const userApi = axios.create({
   baseURL: USER_SERVICE_URL,
